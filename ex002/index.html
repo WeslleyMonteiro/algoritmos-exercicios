@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boas Vindas</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1> Qual é o seu nome?</h1>
+        <input type="text" name="inputNome" id="inputNome" placeholder="Digite seu nome.">
+        <button onclick="boasVindas()">Clique Aqui</button>
+        <p id="salve"></p>
+    </div>
+
+    <script>
+        function boasVindas () {
+            let imputNome = document.getElementById ("inputNome")
+            let nome =  inputNome.value
+            document.getElementById ("salve"). textContent = `Olá ${nome}! Seja bem vindo.`
+        }
+    </script>
+    
+</body>
+</html>

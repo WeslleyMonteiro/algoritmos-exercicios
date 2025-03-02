@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <p>Digite seu nome</p>
+        <input type="text" name="inputNome" id="inputNome" placeholder="Digite seu nome" required>
+        
+        <p>Quanto você ganha?</p>
+        <input type="text" name="inputSalario" id="inputSalario" placeholder="Somente números" required>
+        
+        <button onclick="nomeSalario()">Clique aqui</button>
+        <p id="nomesal"></p>
+
+    </div>
+
+    <script>
+        function nomeSalario (){
+            let inputNome = document.getElementById ("inputNome")
+            let nome = inputNome.value
+            let inputSalario = document.getElementById ("inputSalario")
+            let salario = inputSalario.value
+            document.getElementById ("nomesal"). textContent = `${nome} recebe uma salário de ${salario} reais.`
+
+        }
+
+    </script>
+    
+</body>
+</html>
