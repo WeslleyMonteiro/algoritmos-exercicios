@@ -1,0 +1,8 @@
+function converterDolar(){
+    const inputValor = document.getElementById("inputValor")
+    const valor = Number (inputValor.value)
+
+    const dolar = valor / 3.45
+    document.getElementById("dolar").textContent = `${valor} é igual a ${dolar} dólares`
+
+}
