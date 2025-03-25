@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promoção Dia da Mulher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    
+        <p>Qual seu sexo?</p>
+
+        <input type="radio" name="sexo" id="inputMasc" value="Masculino"> <label for="inputMasc"> Masculino</label>
+        
+        <input type="radio" name="sexo" id="inputFem" value="Feminino"> <label for="inputFem">Feminino</label><br>
+        
+        <p>Digite o valor do produto:</p>
+        <input type="text" name="inputValor" id="inputValor">
+        <p id="res"></p>
+
+        <button onclick="desconto()">Calcular</button>
+
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
