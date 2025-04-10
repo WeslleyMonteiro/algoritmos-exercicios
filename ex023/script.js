@@ -3,7 +3,7 @@ const masculino = document.getElementById("masculino")
 const res = document.getElementById("res")
 const btn = document.getElementById("btn")
 
-function calcular(){
+btn.onclick = function calcular(){
     const valor = document.getElementById("valor")
     const val = Number(valor.value)
 
@@ -21,5 +21,5 @@ function calcular(){
     valor.focus()
 }
 
-btn.addEventListener("click", calcular)
+// btn.addEventListener("click", calcular) = OUTRA FORMA
 
