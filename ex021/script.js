@@ -1,3 +1,5 @@
+const btn = document.getElementById("btn")
+
 function bissexto() {
     const inputAno = document.getElementById("inputAno")
     const ano = Number (inputAno.value)
@@ -10,3 +12,8 @@ function bissexto() {
 
     inputAno.value = ""
 }
+
+btn.addEventListener("click",bissexto)
+
+
+

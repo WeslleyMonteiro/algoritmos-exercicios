@@ -1,3 +1,5 @@
+const btn = document.getElementById("btn")
+
 function alistar() {
     const inputAnoN = document.getElementById("inputAnoN")
     const anoN = Number (inputAnoN.value)
@@ -9,3 +11,5 @@ function alistar() {
         document.getElementById("res").textContent = `Você tem ${idade} anos, logo você não pode votar.`
     }
 }
+
+btn.addEventListener("click",alistar)

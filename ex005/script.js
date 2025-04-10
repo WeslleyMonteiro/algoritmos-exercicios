@@ -1,3 +1,5 @@
+const btn = document.getElementById("btn")
+
 function CalcularMedia() {
      const inputNota1 = document.getElementById("inputNota1")
      const inputNota2 = document.getElementById ("inputNota2")
@@ -12,3 +14,4 @@ function CalcularMedia() {
      inputNota2.value = ""
 }
 
+btn.addEventListener("click",CalcularMedia)

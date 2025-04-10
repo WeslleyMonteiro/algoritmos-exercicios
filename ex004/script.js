@@ -1,3 +1,4 @@
+const btn = document.getElementById("btn")
 
 function somarN () {
     const inputNum1 = document.getElementById ("inputNum1")
@@ -11,5 +12,9 @@ function somarN () {
     document.getElementById ("somou"). textContent = `A soma de ${n1} + ${n2} é igual a ${somar}`
 
 }
+
+btn.addEventListener("click",somarN) // tem que fazer a função antes de ser declarada,não esqueça
+
+
 
 

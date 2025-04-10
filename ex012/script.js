@@ -1,3 +1,5 @@
+const btn = document.getElementById("btn")
+
 function desconto() {
     const inputPreco = document.getElementById("inputPreco")
     const preco = Number (inputPreco.value)
@@ -7,3 +9,5 @@ function desconto() {
 
     inputPreco.value = ""
 }
+
+btn.addEventListener("click",desconto)

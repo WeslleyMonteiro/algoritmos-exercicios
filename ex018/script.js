@@ -1,3 +1,5 @@
+const btn = document.getElementById("btn")
+
 function votar() {
     const inputAno = document.getElementById("inputAno")
     const ano = Number (inputAno.value)
@@ -10,3 +12,5 @@ function votar() {
 
     inputAno.value = ""
 }
+
+btn.addEventListener("click",votar)

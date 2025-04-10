@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,24 +8,23 @@
 </head>
 <body>
     <div class="container">
-    
-        <p>Qual seu sexo?</p>
+        <p>Calculadora de Desconto<p>
 
-        <input type="radio" name="sexo" id="inputMasc" value="Masculino"> <label for="inputMasc"> Masculino</label>
+            <label for="valor">Digite o valor:</label><br>
+            <input type="text" id="valor" placeholder="Ex: 100"><br>
         
-        <input type="radio" name="sexo" id="inputFem" value="Feminino"> <label for="inputFem">Feminino</label><br>
+            <label>
+                <input type="radio" name="genero" id="feminino"> Feminino
+            </label>
+            <label>
+                <input type="radio" name="genero" id="masculino"> Masculino
+            </label><br>
         
-        <p>Digite o valor do produto:</p>
-        <input type="text" name="inputValor" id="inputValor">
-        <p id="res"></p>
-
-        <button onclick="Calcular()">Calcular</button>
-
-        <p id="res"></p>
-
+            <button id="btn">Calcular</button>
+            
+            <p id="res"></p>
     </div>
 
     <script src="script.js"></script>
-    
 </body>
 </html>

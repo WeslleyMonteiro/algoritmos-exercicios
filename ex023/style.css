@@ -17,17 +17,20 @@ body {
     max-width: 600px;
     border: 2px solid #8B7D70;
 }
-
-label {
-    color:white
-}
 h1 {
     color: #fafafa;
 }
+
 p {
     color: #fafafa;
     font-size: 1.1em;
 }
+
+label {
+    color: #fafafa;
+    font-size: 1.1em;
+}
+
 button {
     background-color: #2B2111;
     color: #F4F0EA;

@@ -1,3 +1,5 @@
+const btn = document.getElementById("btn")
+
 function converterDolar(){
     const inputValor = document.getElementById("inputValor")
     const valor = Number (inputValor.value)
@@ -6,3 +8,5 @@ function converterDolar(){
     document.getElementById("dolar").textContent = `${valor} é igual a ${dolar} dólares`
 
 }
+
+btn.addEventListener("click",converterDolar)

@@ -1,21 +1,25 @@
-const feminino = document.getElementById("inputFem").value
-
-const masculino = document.getElementById("inputMasc").value
-
-const valor = document.getElementById("inputValor").value
-
-let c = ''
-
+const feminino = document.getElementById("feminino")
+const masculino = document.getElementById("masculino")
 const res = document.getElementById("res")
+const btn = document.getElementById("btn")
 
-function Calcular(){
+function calcular(){
+    const valor = document.getElementById("valor")
+    const val = Number(valor.value)
+
     if(feminino.checked){
-        c = valor * 0.83
-        res.textContent = `O valor final é ${c} `
-    }else(masculino.checked);{
-        c = valor * 0.95
-        res.textContent = `O valor final é ${c} `
+        let desc = val * 0.85
+        res.textContent = `O valor com desconto fica R$ ${desc.toFixed(2)}`
+    } else if(masculino.checked){
+        let desc = val * 0.95
+        res.textContent = `O valor com desconto fica R$ ${desc.toFixed(2)}`
+    } else {
+        res.textContent = "Por favor, selecione um gênero."
     }
+
+    valor.value = ''
+    valor.focus()
 }
 
+btn.addEventListener("click", calcular)
 

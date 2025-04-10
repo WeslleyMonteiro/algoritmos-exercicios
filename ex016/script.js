@@ -1,3 +1,5 @@
+const btn = document.getElementById("btn")
+
 function vaiMorrer() {
     const inputCigarro = document.getElementById("inputCigarro")
     const inputAnos = document.getElementById("inputAnos")
@@ -15,3 +17,5 @@ function vaiMorrer() {
     inputCigarro.value = ""
     inputAnos.value = ""
 }
+
+btn.addEventListener("click",vaiMorrer)

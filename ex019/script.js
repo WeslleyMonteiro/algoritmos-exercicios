@@ -1,3 +1,5 @@
+const btn = document.getElementById("btn")
+
 function media() {
     const inputNota1 = document.getElementById("inputNota1")
     const inputNota2 = document.getElementById("inputNota2")
@@ -12,3 +14,6 @@ function media() {
         document.getElementById("res").textContent = `Você teve ${media} de média, então você está REPROVADO`
     }
 }
+
+btn.addEventListener("click",media)
+

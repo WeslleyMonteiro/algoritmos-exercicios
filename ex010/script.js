@@ -1,3 +1,5 @@
+const btn = document.getElementById("btn")
+
 function areaTinta() {
     const InputAltura = document.getElementById("InputAltura")
     const altura = Number (InputAltura.value)
@@ -13,3 +15,6 @@ function areaTinta() {
     InputAltura.value = ""
     inputLargura.value = ""
 }
+
+btn.addEventListener("click",areaTinta)
+

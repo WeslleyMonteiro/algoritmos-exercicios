@@ -1,3 +1,5 @@
+const btn = document.getElementById("btn")
+
 function rolaMulta() {
     const inputVelocidade = document.getElementById("inputVelocidade")
 
@@ -10,3 +12,5 @@ function rolaMulta() {
 
     inputVelocidade.value = ""
 }
+
+btn.addEventListener("click",rolaMulta)

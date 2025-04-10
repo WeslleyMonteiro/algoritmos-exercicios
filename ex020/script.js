@@ -1,3 +1,5 @@
+const btn = document.getElementById("btn")
+
 function parOuImpar() {
     const inputNumero = document.getElementById("inputNumero")
 
@@ -9,3 +11,5 @@ function parOuImpar() {
         document.getElementById("res").textContent = `o número ${numero} é IMPAR`
     }
 }
+
+btn.addEventListener("click",parOuImpar)

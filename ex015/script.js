@@ -1,3 +1,5 @@
+const btn = document.getElementById("btn")
+
 function salario() {
     const inputDias = document.getElementById("inputDias")
     const dias = Number (inputDias.value)
@@ -5,3 +7,5 @@ function salario() {
     const salarioMes = dias * 8*25
     document.getElementById("res").textContent = `O seu salário é ${salarioMes} reais.`
 }
+
+btn.addEventListener("click",salario)

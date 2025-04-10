@@ -1,3 +1,5 @@
+const btn = document.getElementById("btn")
+
 function antecessorSucessor() {
     const inputNumero = document.getElementById ("inputNumero")
     const numero = Number(inputNumero.value)
@@ -8,3 +10,5 @@ function antecessorSucessor() {
     document.getElementById("antecessor").textContent = `O antecessor é ${oAntecessor}.`
     document.getElementById("sucessor").textContent = `O sucessor é ${oSucessor}.`
 }
+
+btn.addEventListener("click",antecessorSucessor)

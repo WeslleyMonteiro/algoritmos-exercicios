@@ -1,3 +1,5 @@
+const btn = document.getElementById("btn")
+
 function mostrar() {
     const inputNumero = document.getElementById("inputNumero")
     const numero = Number (inputNumero.value)
@@ -10,3 +12,5 @@ function mostrar() {
 
     inputNumero.value = ""
 }
+
+btn.addEventListener("click",mostrar)
