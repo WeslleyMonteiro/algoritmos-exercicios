@@ -1,6 +1,6 @@
 const btn = document.getElementById("btn")
 
-function desconto() {
+const desconto = ()=>{
     const inputPreco = document.getElementById("inputPreco")
     const preco = Number (inputPreco.value)
 

@@ -14,6 +14,8 @@ const btn = document.getElementById("btn")
 
 // }
 
+
+//ARROW FUNCTION COM addEventListener
 const somaArrowFunction = ()=>{
     const inputNum1 = document.getElementById ("inputNum1")
     const n1 = Number (inputNum1.value)
@@ -28,7 +30,10 @@ const somaArrowFunction = ()=>{
 }
 
 
-btn.addEventListener("click",somaArrowFunction) // tem que fazer a função antes de ser declarada,não esqueça
+btn.addEventListener("click", ()=>{
+    somaArrowFunction() // Você pode criar toda a função aqui também se quiser
+
+}) // tem que fazer a função antes de ser declarada,não esqueça
 
 
 

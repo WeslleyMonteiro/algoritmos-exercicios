@@ -1,6 +1,10 @@
 const btn = document.getElementById("btn")
 
-function converter() {
+// function converter() {
+//    //ARGUMENTOS USADOS NA VERSÃO ABAIXO
+// }
+
+btn.addEventListener("click",()=>{
     const inputDistancia = document.getElementById ("inputDistancia")
     const distancia = Number (inputDistancia.value)
 
@@ -22,6 +26,4 @@ function converter() {
     document.getElementById("milimetros").textContent = `A medida em milimetros é: ${mm}mm.`
 
     inputDistancia.value = ""
-}
-
-btn.addEventListener("click",converter)
+})

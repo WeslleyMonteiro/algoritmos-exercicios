@@ -13,4 +13,4 @@ function mostrar() {
     inputNumero.value = ""
 }
 
-btn.addEventListener("click",mostrar)
+btn.onclick = mostrar

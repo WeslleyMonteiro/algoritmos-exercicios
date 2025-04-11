@@ -1,6 +1,6 @@
 const btn = document.getElementById("btn")
 
-function calcularSalario() {
+const calcularSalario = function () {
     const inputSalario = document.getElementById("inputSalario")
 
     const salario = Number(inputSalario.value)

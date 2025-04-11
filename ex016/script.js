@@ -18,4 +18,4 @@ function vaiMorrer() {
     inputAnos.value = ""
 }
 
-btn.addEventListener("click",vaiMorrer)
+btn.onclick = vaiMorrer
