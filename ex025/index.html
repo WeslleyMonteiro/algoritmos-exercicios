@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Será que é um Triâgulo?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main id="container">
+
+        <!--ACRESCENTAR UMA SECTION COM IMAGEM AQUI-->
+
+        <section id="triangle_calculator">
+            <form id="form">
+                <h1 id="title">Será que é um triângulo?</h1>
+
+                <div class="input-box">
+                    <label for="first-line">Tamanho da primeira linha</label>
+                    <div class="input-field">
+                        <!--COLOCAR UM ÍCONE DEPOIS-->
+                        <input type="number" id="first-line" step="any"required>
+                        <span>cm</span>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="second-line">Tamanho da segunda linha</label>
+                    <div class="input-field">
+                        <!--COLOCAR UM ÍCONE DEPOIS-->
+                        <input type="number" id="second-line" step="any"required>
+                        <span>cm</span>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="third-line">Tamanho da terceira linha</label>
+                    <div class="input-field">
+                        <!--COLOCAR UM ÍCONE DEPOIS-->
+                        <input type="number" id="third-line" step="any"required>
+                        <span>cm</span>
+                    </div>
+                </div>
+
+                <button id="calculate">
+                    Calcular
+                </button>
+
+                <div id="infos" class="hidden">
+                    <div id="result">
+                        <div id="triangle">
+                            <span id="condition">É um triâgulo</span>
+                        </div>
+
+                        <div id="description">
+                            <span>O tipo é:</span>
+                        </div>
+                    </div>
+
+                    <div id="more-info">
+                        <a href="https://brasilescola.uol.com.br/matematica/triangulo.htm">Mais informações sobre triângulos
+                            <!--COLOCAR UM ÍCONE-->
+                        </a>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
