@@ -48,3 +48,5 @@ form.addEventListener('submit', function(event) {
     condition.textContent = triangle
     description.textContent = type
 })
+
+// O método preventDefault() em JavaScript é usado para impedir o comportamento padrão de um evento. É muito comum em situações como impedir que um formulário recarregue a página ao ser enviado, ou evitar que um link redirecione ao ser clicado.

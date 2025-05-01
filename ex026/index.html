@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Compare os Números</title>
+</head>
+<body>
+
+    <main id="container">
+        <section id="major-or-minor">
+            <form id="form">
+                <h1>Comparador de Números</h1>
+
+                <div class="input-box">
+                    <label for="first-number">Digite o primeiro número:</label>
+                    <div class="input-field">
+                        <input type="number" id="first-number" step="any" required>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="second-number">Digite o segundo número:</label>
+                    <div class="input-field">
+                        <input type="number" id="second-number" step="any" required>
+                    </div>
+                </div>
+
+                <button id="calculate">
+                    Calcular
+                </button>
+
+                <div id="infos" class="hidden">
+                    <div id="result-c">
+                        <span id="result"></span>
+                    </div>
+            </form>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- Minhas percepções 
+
+Coloque o conteudo principal sempre em tag main- container e depois separe por sections
+
+Nesse caso a section se tornou um form inteiro no qual esse form foi declarado na section
+
+Crie divs envelopando os conteúdos do form div input-box pra envelopar a label div-inputfield pra envelopar a area do input eles serão classes pois assim pode padronizar como eles serão no css
+
+Classe hidden no campo de resultados, colocar display none nela no CSS e depois usar o JS pra tirar essa classe pra o que está escrito aparecer
+
+o step any permite que você coloque numeros com virgula e e ponto nos inputs -->
+
