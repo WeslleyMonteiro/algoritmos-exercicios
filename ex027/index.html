@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual é sua média?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="container">
+        <section id="media_calculator">
+            <form id="form">
+                <div class="input-box">
+                    <label for="first-number">Digite sua primeira nota:</label>
+                    <div class="input-field">
+                        <input type="number"  id="first-number" step="any" required>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="second-number">Digite sua segunda nota nota:</label>
+                    <div class="input-field">
+                        <input type="number"  id="second-number" step="any" required>
+                    </div>
+                </div>
+
+                <button id="calculate">
+                    Calcular
+                </button>
+
+                <div id="infos" class="hidden">
+                    <div id="result-c">
+                        <span id="result"></span>
+                    </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
