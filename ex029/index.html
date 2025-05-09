@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E o salário ó</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="container">
+        <section id="salary_calculator">
+            <form id="form">
+                <div class="input-box">
+                    <label for="name">Qual é o seu nome?</label>
+                    <div class="input-field">
+                        <input type="text" id="name" step="any"required>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="salary">Qual é o seu salário?</label>
+                    <div class="input-field">
+                        <input type="number" id="salary" step="any"required>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="year">Quantos anos de empresa?</label>
+                    <div class="input-field">
+                        <input type="number" id="year" step="any"required>
+                    </div>
+                </div>
+
+                <button type="submit" id="caculate">Calcular</button>
+
+                <div id="infos" class="hidden">
+                    <div class="result-c">
+                        <span id="result"></span>
+                    </div>
+                </div>
+                             
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
