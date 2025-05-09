@@ -4,14 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terreno</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <main id="container">
-        <section id="terreno">
-            
+        <section id="land_area">
+            <form id="form">
+                <div class="imput-box">
+                    <label for="height">Comprimento do terreno</label>
+                    <div class="imput-field">
+                        <input type="number" id="height" step="any" required>
+                    </div>
+                </div>
+
+                <div class="imput-box">
+                    <label for="width">Largura do terreno</label>
+                    <div class="imput-field">
+                        <input type="number" id="width" step="any" required>
+                    </div>
+                </div>
+
+                <button type="submit" id="calculate">
+                    Calcular
+                </button>
+
+                <div id="infos" class="hidden">
+                    <div id="result-c">
+                        <span id="result"></span>
+                    </div>
+            </form>
         </section>
     </main>
     
+    <script src="script.js"></script>
 </body>
 </html>
