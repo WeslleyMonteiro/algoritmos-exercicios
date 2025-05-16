@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emprestimo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="container">
+        <section id="loan_calculator">
+            <form id="form">
+                <div class="input-box">
+                    <label for="house-price">Qual é o valor da casa?</label>
+                </div>
+                <div class="input-field">
+                    <input type="number" id="house-price">
+                </div>
+
+                <div class="input-box">
+                    <label for="salary">Qual é a sua renda mensal?</label>
+                </div>
+                <div class="input-field">
+                    <input type="number" id="salary">
+                </div>
+
+                <div class="input-box">
+                    <label for="years">Em quantos anos pretende pagar?</label>
+                </div>
+                <div class="input-field">
+                    <input type="number" id="years">
+                </div>
+
+                <button type="submit" id="loan_calculate">Simular empréstimo</button>
+
+                <div id="infos" class="hidden">
+                    <div class="result">
+                        <span id="values"></span>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <!-- 33) Escreva um programa para aprovar ou não o empréstimo bancário para a compra 
+de uma casa. O programa vai perguntar o valor da casa, o salário do comprador e 
+em quantos anos ele vai pagar. Calcule o valor da prestação mensal, sabendo que 
+ela não pode exceder 30% do salário ou então o empréstimo será negado -->
+
+</body>
+</html>
