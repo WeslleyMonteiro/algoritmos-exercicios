@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Advinhe o número</title>
+</head>
+<body>
+    <main id="container">
+        <section id="guess">
+            <form id="form">
+                <div class="input-box">
+                    <label for="your_number">Digite um número de 1 a 5:</label>
+                </div>
+                <div class="input-field">
+                    <input type="number" id="your_number">
+                </div>
+
+                <button type="submit" id="guess-number">Advinhar</button>
+
+                <div id="infos" class="hidden">
+                    <div class="result-guess">
+                        <span id="result"></span>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
