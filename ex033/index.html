@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quanto custa o carro?</title>
+</head>
+<body>
+
+    <main id="container">
+        <section id="car_rent">
+            <h2>Simulador de Aluguel</h2>
+            <form id="form">
+                <select id="car_options">
+
+                    <option>Carro Popular</option>
+                    <option>Carro de luxo</option>
+
+                </select>
+
+                <div class="input-box">
+                    <label for="days">Quantos dias foi usado?</label>
+                    <div class="input-field">
+                        <input type="number" id="days" step="any" required placeholder="Apenas números">
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="kms">Quantos quilômetros foram percorridos?</label>
+                    <div class="input-field">
+                        <input type="number" id="kms" step="any" required placeholder="Apenas números">
+                    </div>
+                </div>
+
+                <button type="submit" id="rent_calculator">Calcular
+                </button>
+
+                <div id="infos" class="hidden">
+                    <div class="result_rent">
+                        <span id="result"></span>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
