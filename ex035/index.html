@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salario</title>
+</head>
+<body>
+    <!--aumento de acordo com alguns fatores. Faça um programa que leia o salário atual, 
+o gênero do funcionário e há quantos anos esse funcionário trabalha na empresa. 
+No final, mostre o seu novo salário, baseado na tabela a seguir: - Mulheres - menos de 15 anos de empresa: +5% - de 15 até 20 anos de empresa: +12% - mais de 20 anos de empresa: +23% - Homens - menos de 20 anos de empresa: +3% - de 20 até 30 anos de empresa: +13% - mais de 30 anos de empresa: +25% 
+-->
+    <main id="container">
+        <section id="salary_Calculator">
+            <h2>Simulador de Reajuste Salarial</h2>
+            <form id="form">
+                <div class="input-box">
+                    <label for="salary" >Digite seu salário atual</label>
+                    <div class="input-field">
+                        <input type="number" id="salary" placeholder="Apenas números">   
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="years" >Há quantos anos você trabalha na empresa?</label>
+                    <div class="input-field">
+                        <input type="number" id="years" placeholder="Apenas números">   
+                    </div>
+                </div>
+
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="gender" id="female"> Feminino
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" id="male"> Masculino
+                    </label>
+                </div>
+
+                <button id="btn_calculateS" type="submit">Simular</button>
+
+                <div id="infos" class="hidden">
+                    <div class="result-salary">
+                        <span id="result"></span>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
