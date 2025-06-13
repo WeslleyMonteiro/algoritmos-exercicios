@@ -16,11 +16,25 @@
     </div>
 
     <script>
-        function boasVindas () {
-            let imputNome = document.getElementById ("inputNome")
-            let nome =  inputNome.value
-            document.getElementById ("salve"). textContent = `Olá ${nome}! Seja bem vindo.`
-        }
+        const exibirMensagem = nome => {
+        document.getElementById("salve").textContent = `Olá ${nome}! Seja bem-vindo.`;
+    };
+
+    const boasVindas = () => {
+        const nome = document.getElementById("inputNome").value;
+        exibirMensagem(nome);
+    };
+
+    // SEM PARAMETRO
+
+    // const exibirMensagem = () => {
+    //     const nome = document.getElementById("inputNome").value;
+    //     document.getElementById("salve").textContent = `Olá ${nome}! Seja bem-vindo.`;
+    // };
+
+    // const boasVindas = () => {
+    //     exibirMensagem();
+    // };
     </script>
     
 </body>
